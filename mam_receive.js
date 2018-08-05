@@ -1,5 +1,6 @@
 /*
-Author: Robert Lie (mobilefish.com)
+Author: Robert Lie
+Modified: Justen Deifel
 
 The mam_receive.js file extracts stored data from the tangle using MAM.
 This extracted data will be displayed on the screen.
@@ -12,8 +13,6 @@ Usage:
     If you do, make the same changes in mam_publish.js and mam_sensor.js files.
 2)  Start the app: node mam_receive.js <root>
 
-More information:
-https://www.mobilefish.com/developer/iota/iota_quickguide_raspi_mam.html
 */
 
 const Mam = require('./lib/mam.client.js');
