@@ -25,12 +25,3 @@ The project consists of 4 main files and should be executed on the Raspberry Pi.
 ```
 npm install
 ```
-
-## Usage
-
-How to use the scripts see:  
-[https://www.mobilefish.com/developer/iota/iota_quickguide_raspi_mam.html][1]
-
-or watch this YouTube video:
-[https://youtu.be/atJ-ZT7aKoA][2]
-
