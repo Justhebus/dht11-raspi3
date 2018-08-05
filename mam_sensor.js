@@ -1,11 +1,10 @@
 /*
-Author: Robert Lie (mobilefish.com)
+Author: Robert Lie
+Modified: Justen Deifel
 
 The mam_sensor.js file publishes DHT11 sensor data (temperature and humidity) on the tangle using MAM.
 This file only works on the Raspberry Pi.
 The published data can be viewed using the mam_receive.js file or
-https://www.mobilefish.com/services/cryptocurrency/mam.html (Select option: Data receiver)
-
 Usage:
 1)  Connect DHT11 sensor to Raspberry Pi.
 2)  Do not forget to type: npm install
@@ -13,8 +12,6 @@ Usage:
     If you do, make the same changes in mam_receive.js file.
 4)  Start the app: node mam_sensor.js
 
-More information:
-https://www.mobilefish.com/developer/iota/iota_quickguide_raspi_mam.html
 */
 const sensor = require('node-dht-sensor');
 const Mam = require('./lib/mam.client.js');
@@ -27,7 +24,7 @@ const MODE = 'restricted'; // public, private or restricted
 const SIDEKEY = 'mysecret'; // Enter only ASCII characters. Used only in restricted mode
 const SECURITYLEVEL = 3; // 1, 2 or 3
 const TIMEINTERVAL = 20; // seconds
-const SENSORTYPE = 11; // 11=DHT11, 22=DHT22
+const SENSORTYPE = 11; // Sensor DHT11
 const GPIOPIN = 4; // The Raspi gpio pin where data from the DHT11 is read
 
 // Initialise MAM State
