@@ -1,18 +1,16 @@
 /*
-Author: Robert Lie (mobilefish.com)
+Author: Robert Lie
+Modified: Justen Deifel
 
 The mam_publish.js file publishes random generated numbers on the tangle using MAM.
 This file will work on a computer or Raspberry Pi.
-The published data can be viewed using the mam_receive.js file or
-https://www.mobilefish.com/services/cryptocurrency/mam.html (Select option: Data receiver)
+The published data can be viewed using the mam_receive.js
 
 Usage:
 1)  You can change the default settings: MODE, SIDEKEY, SECURITYLEVEL or TIMEINTERVAL
     If you do, make the same changes in mam_receive.js file.
 2)  Start the app: node mam_publish.js
 
-More information:
-https://www.mobilefish.com/developer/iota/iota_quickguide_raspi_mam.html
 */
 
 const Mam = require('./lib/mam.client.js');
